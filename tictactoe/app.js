@@ -27,7 +27,7 @@ require([
         events: {
             'click .grid': 'playRound'
         },
-        changePlayer: function(number) {
+        changePlayer: function() {
             if (this.player === 'me') this.player = 'you';
 		    else this.player = 'me';
         },
@@ -41,10 +41,10 @@ require([
             
             console.log(number.target);
         }
-    })
+    });
   
     $(document).ready(function(){
         app.gameView = new app.gameView();
-    })
+    });
     
 });
