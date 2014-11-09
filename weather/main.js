@@ -51,7 +51,6 @@ require([
     app.PostItemView = Backbone.View.extend({
         el: '#weatherApp',
         initialize: function() {
-            //alert('hello');
             var self = this;
             this.model = new app.PostItem();
             this.template = _.template($('#weatherData').html());

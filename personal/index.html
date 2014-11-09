@@ -1,0 +1,22 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>personal data</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/requirejs/require.js" data-main="main.js?02" type="text/javascript"></script>
+</head>
+<body>
+    <section id="personalApp" class="contiainer content-section text-center"></section>
+    
+    <script type="text/template" id="personalData">
+        <img src="<%= results[0].user.picture.medium %>" alt="">
+        <h1><%= results[0].user.gender %></h1>
+        <h1><%= results[0].user.name.first %> <%= results[0].user.name.last %></h1>
+        <h2><%= results[0].user.location.city %></h2>
+        <h2><%= results[0].user.email %></h2>
+    </script>
+</body>
+</html>
