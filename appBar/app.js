@@ -26,13 +26,13 @@ require([
             'click #menu': 'openMenu'
         },
         openMenu: function() {
+            this.$el.find("#list").toggleClass("open");
+            this.$el.find("#bar").toggleClass("open");
+            
             if(this.$el.find(".navdrawer-container").hasClass("open")) {
-              this.$el.find("#list").removeClass("open");
-              this.$el.find("#bar").removeClass("open");
-              
+              this.$el.find("#fa").removeClass("fa-bars").addClass("fa-close");
             } else {
-              this.$el.find("#list").addClass("open");
-              this.$el.find("#bar").addClass("open");
+              this.$el.find("#fa").removeClass("fa-close").addClass("fa-bars");
             }
         }
     });
