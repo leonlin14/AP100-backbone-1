@@ -1,0 +1,23 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>weather</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/requirejs/require.js" data-main="main.js?02" type="text/javascript"></script>
+</head>
+<body>
+    <section id="weatherApp" class="contiainer content-section text-center"></section>
+    
+    <script type="text/template" id="weatherData">
+        <div class="post-section">
+            <h2><%= name %></h2>
+            <h2><%= weather[0].main %></h2>
+            <p><%= weather[0].description %></p>
+            <p><%= main.temp %></p>
+        </div>
+    </script>
+</body>
+</html>
