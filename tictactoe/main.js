@@ -23,7 +23,6 @@ var gameModule = (function ($) {
             if(board[i]===0 || board[i]===3) alert(player + ' win');
         }
         
-        console.log(player);
         console.log(idx);	
 		console.log(m);
 	}

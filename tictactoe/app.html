@@ -22,10 +22,10 @@ To change this template use Tools | Templates.
         }
     
     </style>
-    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-	<script src="main.js" type="text/javascript"></script>	
+    <script src="bower_components/requirejs/require.js" data-main="app.js" type="text/javascript"></script>
 </head>
 <body>
+<div id="board">
     <div class="bar">
         <div class="grid" data-grid-no="0"></div>
         <div class="grid" data-grid-no="1"></div>
@@ -41,9 +41,6 @@ To change this template use Tools | Templates.
         <div class="grid" data-grid-no="7"></div>
         <div class="grid" data-grid-no="8"></div>	
     </div>
-
-<script>
-	$('.grid').playRound();
-</script>
+</div>
 </body>
 </html>
