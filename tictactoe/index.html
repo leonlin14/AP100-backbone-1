@@ -1,0 +1,49 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>tictactoe</title>
+    <style>
+        .bar {
+	        display: block;
+	        width: 320px;
+        }
+        .grid {
+            background: #222222;
+            color: #ffffff;
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            font-size:3em;
+            text-align: center;
+            float: right;	
+        }
+    
+    </style>
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="main.js?001" type="text/javascript"></script>	
+</head>
+<body>
+    <div class="bar">
+        <div class="grid" data-grid-no="0"></div>
+        <div class="grid" data-grid-no="1"></div>
+        <div class="grid" data-grid-no="2"></div>	
+    </div>
+    <div class="bar">
+        <div class="grid" data-grid-no="3"></div>
+        <div class="grid" data-grid-no="4"></div>
+        <div class="grid" data-grid-no="5"></div>	
+    </div>
+    <div class="bar">
+        <div class="grid" data-grid-no="6"></div>
+        <div class="grid" data-grid-no="7"></div>
+        <div class="grid" data-grid-no="8"></div>	
+    </div>
+
+<script>
+	$('.grid').playRound();
+</script>
+</body>
+</html>
