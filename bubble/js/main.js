@@ -76,8 +76,27 @@ require([
             ctx.stroke();
             
         },
-        touchEvent: function(n) {
-            
+        touchEvent: function(evt) {
+            var x1, 
+                x2,
+                y1,
+                y2;
+
+            // 四個角
+            x1 = ballX - ballR;
+            x2 = ballX + ballR;		
+            y1 = ballY - ballR;
+            y2 = ballY + ballR;
+
+            // 是否擊中
+            if ((evt.clientX > x1) && (evt.clientX < x2)) {
+                if ((evt.clientY > y1) && (evt.clientY < y2)) {
+                    this.$el.find("#header").css('display', 'none');
+                    this.$el.find('#header').html('<h2>打到了</h2>');
+                    this.$el.find("#header").fadeIn(500);
+                    this.$el.find("#header").fadeOut(500);
+                }
+            }
         
         }
     });

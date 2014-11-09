@@ -74,7 +74,7 @@ var gameModule = (function() {
         x1 = ballX - ballR;
         x2 = ballX + ballR;		
         y1 = ballY - ballR;
-        y2 = ballY + ballR;	
+        y2 = ballY + ballR;
 
         // 是否擊中
         if ((evt.clientX > x1) && (evt.clientX < x2)) {
